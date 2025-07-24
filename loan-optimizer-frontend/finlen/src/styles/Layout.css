@@ -1,0 +1,159 @@
+/* === Layout Container === */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  width: 100vw;
+}
+
+/* === Sidebar === */
+.sidebar {
+  width: 240px;
+  background-color: #7318ac;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: width 0.3s ease;
+}
+
+.collapsed .sidebar {
+  width: 70px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  color: blanchedalmond;
+}
+
+.collapse-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #d32f2f;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.logout-btn:hover {
+  background-color: #b71c1c;
+}
+
+/* === Main Content === */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left 0.3s ease;
+}
+
+.top-header {
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 50px;
+  background: rgba(216, 9, 188, 0.3);
+  border-bottom: 2px solid rgba(206, 8, 156, 0.2);
+}
+
+.top-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.page-container {
+  flex: 1;
+  margin: 30px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  color: #333;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+  }
+
+  .collapsed .sidebar {
+    width: 100%;
+  }
+
+  .sidebar-logo, .logout-btn {
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .page-container {
+    margin: 20px;
+  }
+}

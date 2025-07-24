@@ -1,0 +1,103 @@
+/* Wrapper for full screen center alignment */
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Fit to full viewport height */
+  width: 100vw;  /* Fit to full viewport width */
+  background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden; /* Prevent unwanted scrolling */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Form Card */
+.register-card {
+  background: rgba(212, 65, 188, 0.08);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 480px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Header with logo */
+.loan-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.logo {
+  height: 45px;
+}
+
+.register-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Form Styling */
+.register-form input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.register-form input::placeholder {
+  color: #e0e0e0;
+}
+
+/* Submit Button */
+.register-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  background-color: #8d6bc9;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.register-button:hover {
+  background-color: #673ab7;
+}
+
+/* Switch Login Text */
+.switch-login {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.login-link {
+  background: none;
+  border: none;
+  color: #ffccff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}

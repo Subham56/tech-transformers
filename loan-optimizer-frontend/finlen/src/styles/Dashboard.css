@@ -1,0 +1,12 @@
+.dashboard-container {
+  padding: 60px 35px;
+  min-height: 100vh;
+  background: url('../images/loan.png') no-repeat center  fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  box-sizing: border-box;
+  position: relative;
+}
