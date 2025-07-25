@@ -1,0 +1,24 @@
+steps:
+    - name: 'maven'
+      entrypoint: 'mvn'
+      args: ['clean', 'install', '-DskipTests']
+      
+    - name: 'gcr.io/cloud-builders/docker'
+      args: ['build', '-t', 'gcr.io/$PROJECT_ID/loan-optimizer:$COMMIT_SHA', '.']
+      
+    - name: 'gcr.io/cloud-builders/docker'
+      args: ['push', 'gcr.io/$PROJECT_ID/loan-optimizer:$COMMIT_SHA',]
+      
+    - name: 'gcr.io/cloud-builders/kubectl'
+      args:
+      - 'set'
+      - 'image'
+      - 'deployment/loan-optimizer'
+      - '*=gcr.io/$PROJECT_ID/loan-optimizer:$COMMIT_SHA'
+      env:
+      - 'CLOUDSDK_COMPUTE_ZONE=europe-west1'
+      - 'CLOUDSDK_CONTAINER_CLUSTER=loan-optimizer-clust'
+      
+      
+options:
+  logging: CLOUD_LOGGING_ONLY
