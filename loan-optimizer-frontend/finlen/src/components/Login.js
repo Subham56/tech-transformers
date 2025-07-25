@@ -39,7 +39,7 @@ const Login = ({ setIsAuthenticated , setCurrentUser }) => {
             <div className="login-right">
               <div className="loan-header">
                 <img src={loanImageLogo} alt="Loan Logo" className="logo" />
-                <h1 className="logo-title"><font color="blue">Loan Optimiser </font></h1>
+                <h1 className="logo-title"><font color="blue">Loan Optimizer </font></h1>
               </div>
 
               <div className="login-form">

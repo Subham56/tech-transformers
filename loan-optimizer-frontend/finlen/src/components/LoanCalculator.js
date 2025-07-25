@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from "recharts";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
+import  '../styles/LoanCalculator.css';
 
 const LoanCalculator = () => {
   const [principal, setPrincipal] = useState("");

@@ -1,12 +1,35 @@
-.dashboard-container {
-  padding: 60px 35px;
+.navigate-container {
   min-height: 100vh;
-  background: url('../images/loan.png') no-repeat center  fixed;
-  background-size: cover;
+  background-size: contain;
+  background-color: #af9acf; /* fallback */
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  overflow-y: auto;
-  box-sizing: border-box;
+  align-items: center;
+  padding-top: 80px; /* space for fixed navbar */
   position: relative;
+}
+
+/* Optional semi-transparent white overlay to make text stand out */
+.overlay {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 40px 20px;
+  border-radius: 16px;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading style */
+.welcome-text {
+  font-size: 26px;
+  color: #6a1b9a;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Image */
+.loan-image {
+  max-width: 250px;
+  height: auto;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
 }

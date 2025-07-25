@@ -55,7 +55,7 @@ const Register = ({ setShowRegister }) => {
       <div className="register-card">
       <div className="loan-header">
       <img src={loanImageLogo} alt="Loan Logo" className="logo" />
-        <h2 className="register-title">Create an Account in FinLen</h2>
+        <h2 className="register-title">Create an Account</h2>
         </div>
         <form onSubmit={handleRegister} className="register-form">
           <input

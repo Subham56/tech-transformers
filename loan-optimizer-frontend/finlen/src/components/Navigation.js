@@ -19,7 +19,8 @@ const Navigation = ({ setIsAuthenticated }) => {
     <NavLink to="/decision" >Loan Optimizer</NavLink>
     <NavLink to="/calculator">Loan Calculator</NavLink>
 
-    <button className="logout-button" onClick={handleLogout}>Logout</button>
+    <button className="logout-button" onClick={handleLogout}><font style={{color:'blue'}}>Logout</font></button>
+       &nbsp;&nbsp;&nbsp;&nbsp;<h2 style={{color:'blue'}}>Welcome to Loan Optimiser</h2>
 </div>
     </nav>
   );

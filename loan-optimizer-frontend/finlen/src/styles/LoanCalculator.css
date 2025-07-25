@@ -1,0 +1,41 @@
+.card {
+  max-width: 350px;
+  margin: 60px auto;
+  padding: 16px 10px; /* Reduced padding */
+  background: linear-gradient(135deg, #c20392, #de0ee6);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(192, 6, 192, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+  color: #eb10eb;
+}
+
+/* Reduce spacing between fields */
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Reduced from 20px */
+  width: 100%;
+}
+
+.card input,
+.card textarea,
+.card select {
+  padding: 8px 12px; /* Reduced padding */
+  font-size: 14px;   /* Slightly smaller font */
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.card label {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+/* Adjust button size */
+.button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+}

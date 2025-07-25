@@ -12,6 +12,7 @@ import Dashboard from "./components/Dashboard";
 import LoanCalculator from "./components/LoanCalculator";
 import LoanDecision from "./components/LoanDecision";
 import Navigation from "./components/Navigation"; // ✅ import this
+import LoanTable from "./components/LoanTable";
 
 export function AppWrapper() {
   const [isAuthenticated, setIsAuthenticated] = React.useState(false);
@@ -46,6 +47,7 @@ export function AppWrapper() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/decision" element={<LoanDecision />} />
         <Route path="/calculator" element={<LoanCalculator />} />
+         <Route path="/loanTable" element={<LoanTable />} />
       </Routes>
     </div>
   );
